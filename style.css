@@ -1,0 +1,674 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: auto;
+    background-color: #505050
+}
+header{
+    width: 100%;
+    height: 250px;
+    background-image: url(imagens/Group\ 7.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#logo{
+    margin-left: 55px;
+    width: 250px;
+    height: 250px;
+   
+}
+
+#menus #menus_link{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-decoration: none;
+}
+
+
+
+.home{
+    width: 120px;
+    height: 37px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 5px;
+    margin-top: 175px;
+    margin-left: 80px;
+    text-align: center;
+    color: #000;
+}
+
+.home:hover{
+    background-color: #215968;
+    color: #fff;
+    transition: 2s;
+}
+
+
+.quem_somos{
+    width: 185px;
+    height: 37px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 5px;
+    margin-top: 175px;
+    text-align: center;
+    color: #000;
+
+}
+
+.quem_somos:hover{
+    background-color: #215968;
+    color: #fff;
+    transition: 2s;
+}
+
+
+
+.aulas{
+    width: 120px;
+    height: 37px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 5px;
+    margin-top: 175px;
+    text-align: center;
+    color: #000;
+
+}
+
+.aulas:hover{
+    background-color: #215968;
+    color: #fff;
+    transition: 2s;
+}
+
+
+.matricule{
+    width: 185px;
+    height: 37px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 5px;
+    margin-top: 175px;
+    text-align: center;
+    color: #000;
+}
+
+.matricule:hover{
+    background-color: #215968;
+    color: #fff;
+    transition: 2s;
+}
+
+
+
+#never{
+    width: 150px;
+    height: 176px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+
+
+              /*Fim da header*/
+
+body{
+    overflow-x: hidden;
+}
+
+#meio{
+    width: 37%;
+    height: 500px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #215968;;  /*Fundo imagem livro*/
+    float: left;
+}
+
+#meio2{
+    width: 63%;
+    height: 500px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #215968;; /* fundo do texto*/
+    display: flex;
+    flex-direction: column;
+}
+
+#imagem_section{
+    width: 560px;
+    height: 415px;
+    margin-left: 35px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+#titulo_ingles{
+    color: #fff;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: -50px;
+    margin-left: 60px;
+}
+
+#texto{
+    font-size: 23px;
+    text-align: center;
+    color: #f1f1f1;
+    margin-top: 60px;
+    margin-left: 60px;
+    
+    
+}
+
+#comece,#comece_link{
+    text-align: center;
+    color: #f1f1f1;
+    width: 200px;
+    height: 45px;
+    padding-top: 10px;
+    margin-left: 180px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    clear: left;
+    
+}
+
+#comece:hover{
+    background-color:#000;
+    transition: 3ms;
+}
+
+.sala{
+    width: 100%;
+    height: 510px;  /* imagem da sala de aula*/
+}
+
+#fundo_meio{
+    background-image: url(imagens/fundos_black.png);
+
+}
+section{
+    width: 100%;
+    height: 590px; 
+}
+
+/* inicio do slider*/
+#quem_somos{
+    width: 750px;
+    height: 510px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 95%);
+    
+   
+   
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.barra{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.barra:hover{
+    background-color: #fff;
+    transition: 1s;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+/*Fim slider*/
+
+.texto2{
+    width: 100%;
+    height: 305px;
+    padding-top: 45px;
+    background-repeat: no-repeat;
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Inicio aulas*/
+
+#titulo_aula{
+    width: 100%;
+    text-align: center;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #215968;;
+    font-size: 35px;
+    color: #fff;
+    padding-top: 40px;
+
+}
+#aulas{
+    width: 100%;
+    height: 440px;
+    display: flex;
+    flex-direction: row;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #215968;;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.aulas_crianca{
+    width: 22%;
+    height: 360px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 27px;
+    cursor: pointer;
+}
+
+#crianca{
+    width: 100%;
+    height: 55%;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+#texto_crianca{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.aulas_3idade{
+    width: 22%;
+    height: 360px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 27px;
+    cursor: pointer;
+    
+}
+
+#terceira_idade{
+    width: 100%;
+    height: 55%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#texto_idade{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.aulas_presencial{
+    width: 22%;
+    height: 360px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 27px;
+}
+
+#presencial{
+    width: 100%;
+    height: 55%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#texto_presencial{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.aulas_online{
+    width: 22%;
+    height: 360px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 27px;
+    cursor: pointer;
+}
+
+#online{
+    width: 100%;
+    height: 55%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#texto_online{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Fim das aulas*/
+
+#fundo_teacher{
+    width: 100%;
+    height: 470px;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: -4px;
+    padding-top: 30px;
+}
+
+#imagem_teacher{
+    width: 400px;
+    height: 415px;
+    margin-top: 20px;
+    margin-left:45px;
+    border-radius: 10px;
+}
+
+#fundo_texto_teacher{
+    height: 470px;
+    background-color: #d9d9d9;     /*Fundo do texto teacher*/
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+#titulo_h3{
+    margin-top: 15px;
+    font-size: 18px;
+}
+#texto_teacher{
+    font-size: 18px;
+    text-align: center;
+
+}
+
+#bandeiras{
+    width: 230px;
+    height: 170px;
+    margin: auto;
+}
+
+#mapa{
+    width: 413px;
+    height: 415px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+/*Inicio footer*/
+
+
+footer{
+    width: 78%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    background-color: #565757;
+    color: #fff;
+    
+}
+
+#logof{
+    width: 234px;
+    height: 200px;
+    
+}
+
+footer img{
+    margin-left: 15px;
+    margin-top: 20px;
+    
+}
+
+
+.coluna1{
+    font-size: 20px;
+    margin-top: 90px;
+    margin-left: 40px;   
+    margin-right: 50px;
+    text-align: center;
+}
+
+.coluna2{
+    font-size: 20px;
+    margin-top: 90px;
+    margin-right: 50px;
+    text-align: center;
+    
+    
+}
+
+.coluna3{
+    font-size: 20px;
+    margin-top: 90px;
+    margin-right: 50px;
+    text-align: center;
+    
+    
+}
+
+.coluna4{
+    font-size: 20px;
+    margin-top: 105px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+/* Inicio contatos*/
+#contatos{
+    width: 22%;
+    height: 250px;
+    float: left;
+    background-color: #565757;
+    color: #fff;
+    
+}
+
+#titulo_contato{
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 20px;
+    
+}
+
+.icones1{
+    width: 30px;
+    height: 30px;
+    margin-top: 17px;
+    float: left;
+    clear: left;
+}
+
+.icones2{
+    width: 30px;
+    height: 30px;
+    float: left;
+    clear: left;
+}
+
+.icones3{
+    width: 30px;
+    height: 30px;
+    margin-top: 17px;
+    float: left;
+    clear: left;
+}
+
+.texto_icones1{
+    margin-top: 17px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.texto_icones2{
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.texto_icones3{
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#logo #never{
+    visibility: hidden;
+}
+
+.home,.quem_somos, .aulas, .matricule{
+    visibility: hidden;
+}
+
+#imagem_section, #titulo_ingles, #texto, #comece{
+    visibility: hidden;
+}
+
+.texto2{
+    visibility: hidden;
+}
+
+
+#crianca, #texto_crianca{
+    visibility: hidden;
+}
+
+#terceira_idade, #texto_idade, #presencial, #texto_presencial, #online, #texto_online{
+    visibility: hidden;
+}
+
+#our_teacher{
+    visibility: hidden;
+}
+
+
+#imagem_teacher, #mapa, #bandeiras, #texto_teacher, #titulo_h3{
+    visibility: hidden;
+}
+
+
+#logof{
+    visibility: hidden;
+}
+
+
+.coluna1, .coluna2, .coluna3, .coluna4{
+    visibility: hidden;
+}
+
+#titulo_contato{
+    visibility: hidden;
+}
+
+.icones1, .texto_icones1{
+    visibility: hidden;
+}
+
+.icones2, .texto_icones2{
+    visibility: hidden;
+}
+
+.icones3, .texto_icones3{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
